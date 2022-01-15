@@ -7,6 +7,7 @@ package Komponenty;
 //import org.junit.AfterClass;
 //import org.junit.BeforeClass;
 import org.junit.Test;
+import org.junit.experimental.categories.Category;
 import static org.junit.Assert.*;
 
 import org.junit.runner.RunWith;
@@ -69,6 +70,7 @@ public class GrupaTest {
     /**
      * Test of toString method, of class Grupa.
      */
+    @Category(FastTest.class)
     @Test
     public void testToString() {
         System.out.println("toString");
@@ -86,8 +88,5 @@ public class GrupaTest {
         //assertEquals(true, true);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");
-    }
-
-    
-    
+    }    
 }

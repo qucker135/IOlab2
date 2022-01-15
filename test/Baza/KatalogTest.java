@@ -6,6 +6,9 @@ package Baza;
 
 import Dane.Dane;
 import Komponenty.Grupa;
+import Komponenty.FastTest;
+import Komponenty.SlowTest;
+import Komponenty.TestGetter;
 import java.util.ArrayList;
 //import Komponenty.Kurs;
 import java.util.Arrays;
@@ -17,6 +20,8 @@ import org.junit.Rule;
 import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
+
+import org.junit.experimental.categories.Category;
 
 /**
  *
@@ -44,8 +49,10 @@ public class KatalogTest {
     /**
      * Test of getListaGrup method, of class Katalog.
      */
+    @Category({TestGetter.class, FastTest.class})
     @Test
     public void testGetListaGrup() {
+        System.out.println("getListaGrup");
         //List<Grupa> listaGrup = katalog.getListaGrup();
         //assertEquals(katalog, null); //nie wiadomo dlaczego, prawdopodobnie dlatego, że obiekty przekazywane są przez "wskaznik" (adres, w javie nie ma wskaznikow)
         for(int i=0;i<Dane.ZestawKatalogow.length;i++){

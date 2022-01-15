@@ -20,6 +20,12 @@ import org.junit.rules.ExpectedException;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
+import org.junit.experimental.categories.Category;
+
+import Komponenty.FastTest;
+import Komponenty.SlowTest;
+import Komponenty.TestGetter;
+
 /**
  *
  * @author Qucker135
@@ -51,9 +57,10 @@ public class Aplikacja_studentaTest {
         Object[][] data1 = new Object[][]{{Dane.AplikacjaStudentaPobierzChecWypisuData[0], Dane.AplikacjaStudentaExpectedResults[0], Dane.l1, Dane.AplikacjaStudentTestingIndexes[0], Dane.g1}, {Dane.AplikacjaStudentaPobierzChecWypisuData[1], Dane.AplikacjaStudentaExpectedResults[1], Dane.l2, Dane.AplikacjaStudentTestingIndexes[1], Dane.g3}};
         return Arrays.asList(data1);
     }
-    
+    @Category(SlowTest.class)
     @Test
     public void testpobierzChecWypisu(){
+        System.out.println("pobierzChecWypisu");
         Aplikacja_studenta as = new Aplikacja_studenta();
         /*
         for(int i=0; i<Dane.AplikacjaStudentaPobierzChecWypisuData.length; i++){
@@ -65,9 +72,10 @@ public class Aplikacja_studentaTest {
         assertEquals(as.pobierzChecWypisu(answer), expectedReaction);
     }
     
-    
+    @Category(SlowTest.class)
     @Test
     public void testPobierzGrupe(){
+        System.out.println("pobierzGrupe");
         Aplikacja_studenta as = new Aplikacja_studenta();
         assertEquals(as.pobierzGrupe(listToCheck, index), foundGroup);
         

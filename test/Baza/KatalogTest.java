@@ -15,12 +15,14 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Rule;
 import org.junit.rules.ExpectedException;
+import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 
 /**
  *
  * @author Qucker135
  */
+@RunWith(Parameterized.class)
 public class KatalogTest {
     
     @Rule
@@ -45,8 +47,11 @@ public class KatalogTest {
     @Test
     public void testGetListaGrup() {
         //List<Grupa> listaGrup = katalog.getListaGrup();
-        assertEquals(katalog, null); //nie wiadomo dlaczego, prawdopodobnie dlatego, że obiekty przekazywane są przez "wskaznik" (adres, w javie nie ma wskaznikow)
-        
+        //assertEquals(katalog, null); //nie wiadomo dlaczego, prawdopodobnie dlatego, że obiekty przekazywane są przez "wskaznik" (adres, w javie nie ma wskaznikow)
+        for(int i=0;i<Dane.ZestawKatalogow.length;i++){
+            assertEquals(katalog.getListaGrup().get(i).toString(), expectedToString[i]);
+        }
+        /* zapomnialem w tym momencie o adnotacji @RunWith(Parameterized.class)
         for(int i=0;i<Dane.ZestawKatalogow.length;i++){
             katalog = Dane.ZestawKatalogow[i];
             expectedToString = Dane.KatalogExpectedResults[i];
@@ -56,6 +61,6 @@ public class KatalogTest {
             for(int j=0; j<listaGrup.size();j++){
                 assertEquals(listaGrup.get(j).toString(),expectedToString[j]);
             }
-        }
+        }*/
     }
 }

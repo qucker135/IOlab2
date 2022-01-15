@@ -38,7 +38,8 @@ public class Dane {
     public static final String AplikacjaStudentaPobierzChecWypisuData[] = {"t", "n"};
     public static final boolean AplikacjaStudentaExpectedResults[] = {true, false};
     
-    
+    public static final String AplikacjaStudentTestingIndexes[] = {"a", "p"};
+    //public static final Grupa AplikacjaStudentaTestingGroups[] = {g1, g3};
     
     //public List<Grupa> listaGrup1 = new ArrayList<Grupa>();
     //public Grupa grupa1 = new Grupa("", "", "");

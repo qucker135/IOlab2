@@ -7,8 +7,8 @@ public class FabrykaGrup extends Fabryka {
 		// throw new UnsupportedOperationException();
 	}
 
-	public Grupa wykonajGrupe(String csv){
-		return new Grupa(csv);
+	public Grupa wykonajGrupe(String kodGrupy, String kodKursu, String prowadzacy){
+		return new Grupa(kodGrupy, kodKursu, prowadzacy);
 	}
 
 }

@@ -162,11 +162,11 @@ public class Grupa {
 	 * 
 	 * @param csv
 	 */
-	public Grupa(String csv) {
-		this.kodGrupy = csv;
-		kodKursu = "0";
+	public Grupa(String kodGrupy, String kodKursu, String prowadzacy) {
+		this.kodGrupy = kodGrupy;
+		this.kodKursu = kodKursu;
 		forma = Forma.WYKLAD;
-		nazwiskoProwadzacego = "Kowalski";
+		nazwiskoProwadzacego = prowadzacy;
 		termin = "Poniedziałek 9:15";
 		nrBudynku = "C4";
 		sala = "205";

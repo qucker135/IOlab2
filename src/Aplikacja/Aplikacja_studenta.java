@@ -12,9 +12,9 @@ public class Aplikacja_studenta {
 
 	public Aplikacja_studenta() {
 		wlasneKonto = new KontoStudenta();
-		zapisz(wlasneKonto.getListaGrup(), new Grupa("0"));
-		zapisz(wlasneKonto.getListaGrup(), new Grupa("1"));
-		zapisz(wlasneKonto.getListaGrup(), new Grupa("2"));
+		zapisz(wlasneKonto.getListaGrup(), new Grupa("0", "0a", "Kowalski"));
+		zapisz(wlasneKonto.getListaGrup(), new Grupa("1", "1b", "Nowak"));
+		zapisz(wlasneKonto.getListaGrup(), new Grupa("2", "2c", "Smith"));
 	}
 
 	/**

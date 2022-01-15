@@ -105,9 +105,9 @@ public class Aplikacja_pracownika {
 		//throw new UnsupportedOperationException();
 
 		Aplikacja_pracownika apk = new Aplikacja_pracownika();
-		Grupa nowaGrupa = new Grupa("abc");
+		Grupa nowaGrupa = new Grupa("abc", "xyz", "Kowalski");
 		apk.dodajGrupe(nowaGrupa);
-		apk.dodajGrupe(new Grupa("def"));
+		apk.dodajGrupe(new Grupa("def", "pqr", "Nowak"));
 		Kurs nowykurs = new Kurs("0");
 		apk.dodajKurs(nowykurs);
 		System.out.println("Przed usunieciem: ");

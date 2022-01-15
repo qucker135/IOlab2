@@ -29,15 +29,15 @@ public class GrupaTest {
     @Rule
     public ExpectedException exception = ExpectedException.none();
     
-    @Parameterized.Parameter
+    @Parameterized.Parameter(value = 0)
     //public Grupa grupa;
     public String kodGrupy;
-    //@Parameterized.Parameter
+    @Parameterized.Parameter(value = 1)
     public String kodKursu;
-    //@Parameterized.Parameter
+    @Parameterized.Parameter(value = 2)
     public String prowadzacy;
     
-    //@Parameterized.Parameter
+    @Parameterized.Parameter(value = 3)
     public String expectedResult;
     
     @Parameterized.Parameters
@@ -46,12 +46,15 @@ public class GrupaTest {
         return Arrays.asList(data1);
     }
     
+    //public GrupaTest(){}
+    
+    /*
     public GrupaTest(String kodGrupy, String kodKursu, String prowadzacy, String expectedResult) {
         this.kodGrupy = kodGrupy;
         this.kodKursu = kodKursu;
         this.prowadzacy = prowadzacy;
         this.expectedResult = expectedResult;
-    }
+    }*/
     
     /*
     @BeforeClass
@@ -78,7 +81,8 @@ public class GrupaTest {
         //for(int i=0; i<Dane.GrupatoStringTestGrupy.length; i++){
         //    assertEquals(Dane.GrupatoStringTestGrupy[i].toString(), Dane.GrupatoStringTestResult[i]);
         //}
-        assertEquals(new Grupa(kodGrupy, kodKursu, prowadzacy), expectedResult);
+        assertEquals(new Grupa(kodGrupy, kodKursu, prowadzacy).toString(), expectedResult);
+        
         //assertEquals(true, true);
         // TODO review the generated test code and remove the default call to fail.
         //fail("The test case is a prototype.");

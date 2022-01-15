@@ -64,7 +64,19 @@ public class Aplikacja_studenta {
 		System.out.println("Czy chcesz wypisac sie z grupy? [t/n]:");
 		Scanner scanner = new Scanner(System.in);
 		String ch = scanner.nextLine();
-		if (ch.equals("t")) //PYTANIE
+		//String ch = znak;
+                if (ch.equals("t"))
+			return true;
+		
+		return false;
+	}
+        
+        public boolean pobierzChecWypisu(String znak) {
+		System.out.println("Czy chcesz wypisac sie z grupy? [t/n]:");
+		//Scanner scanner = new Scanner(System.in);
+		//String ch = scanner.nextLine();
+		String ch = znak;
+                if (ch.equals("t"))
 			return true;
 		
 		return false;
@@ -75,6 +87,19 @@ public class Aplikacja_studenta {
 		Scanner scanner = new Scanner(System.in);
 		String str = scanner.nextLine();
 		
+		for (Grupa grupa : listaGrup) {
+			if (grupa.getKodGrupy().equals(str))
+				return grupa;
+		}
+		return null;
+	}
+        
+        public Grupa pobierzGrupe(List<Grupa> listaGrup, String str) { //PYTANIE
+		System.out.println("Podaj kod grupy:");
+		/*
+                Scanner scanner = new Scanner(System.in);
+		String str = scanner.nextLine();
+		*/
 		for (Grupa grupa : listaGrup) {
 			if (grupa.getKodGrupy().equals(str))
 				return grupa;

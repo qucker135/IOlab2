@@ -9,7 +9,13 @@ public class Katalog {
 	private List<Grupa> listaGrup = new ArrayList<Grupa>();
 	private List<Kurs> listaKursow= new ArrayList<Kurs>();
 
-	public List<Grupa> getListaGrup() {
+	public Katalog(){}
+        
+        public Katalog(ArrayList<Grupa> listaGrup){
+            this.listaGrup = listaGrup;
+        }
+        
+        public List<Grupa> getListaGrup() {
 		return this.listaGrup;
 	}
 

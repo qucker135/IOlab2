@@ -9,6 +9,7 @@ import Baza.*;
 
 import java.util.List;
 import java.util.ArrayList;
+import java.util.*;
 
 /**
  *
@@ -25,11 +26,11 @@ public class Dane {
     //public Katalog k1 = new Katalog(new ArrayList<Grupa>(List.of(new Grupa("","",""), new Grupa("","",""))));
     public static final Grupa g1 = new Grupa("a","b","c");
     public static final Grupa g2 = new Grupa("d","e","f");
-    public static final ArrayList<Grupa> l1 = new ArrayList<Grupa>(List.of(g1, g2));
+    public static final ArrayList<Grupa> l1 = new ArrayList<Grupa>(Arrays.asList(g1, g2));
     public static final Katalog k1 = new Katalog(l1);
     public static final Grupa g3 = new Grupa("p","q","r");
     public static final Grupa g4 = new Grupa("x","y","z");
-    public static final ArrayList<Grupa> l2 = new ArrayList<Grupa>(List.of(g3, g4)); 
+    public static final ArrayList<Grupa> l2 = new ArrayList<Grupa>(Arrays.asList(g3, g4)); 
     public static final Katalog k2 = new Katalog(l2);
     public static final Katalog[] ZestawKatalogow = {k1, k2};
     //public static final ArrayList<Grupa>[] listaListGrup = {new ArrayList<Grupa>(List.of(new Grupa("a","b","c"), new Grupa("d","e","f"))), new ArrayList<Grupa>(List.of(new Grupa("p","q","r"), new Grupa("x","y","z")))};

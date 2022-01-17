@@ -108,7 +108,7 @@ public class Aplikacja_pracownika {
 		Grupa nowaGrupa = new Grupa("abc", "xyz", "Kowalski");
 		apk.dodajGrupe(nowaGrupa);
 		apk.dodajGrupe(new Grupa("def", "pqr", "Nowak"));
-		Kurs nowykurs = new Kurs("0");
+		Kurs nowykurs = new Kurs("0", "Matematyka dyskretna");
 		apk.dodajKurs(nowykurs);
 		System.out.println("Przed usunieciem: ");
 		for(Grupa grupa : apk.katalogKursow.getListaGrup()){

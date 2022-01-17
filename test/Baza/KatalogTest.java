@@ -49,7 +49,7 @@ public class KatalogTest {
     /**
      * Test of getListaGrup method, of class Katalog.
      */
-    @Category({FastTest.class, TestGetter.class})
+    @Category({TestGetter.class, FastTest.class})
     @Test
     public void testGetListaGrup() {
         System.out.println("getListaGrup");

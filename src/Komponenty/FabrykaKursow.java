@@ -7,7 +7,7 @@ public class FabrykaKursow extends Fabryka {
 		// throw new UnsupportedOperationException();
 	}
 
-	public Kurs wykonajKurs(String csv){
-		return new Kurs(csv);
+	public Kurs wykonajKurs(String kodKursu, String nazwa){
+		return new Kurs(kodKursu, nazwa);
 	}
 }

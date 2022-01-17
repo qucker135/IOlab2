@@ -60,7 +60,7 @@ public class Aplikacja_studenta {
 		return listaGrup;
 	}
 
-	private boolean pobierzChecWypisu() {
+	public boolean pobierzChecWypisu() {
 		System.out.println("Czy chcesz wypisac sie z grupy? [t/n]:");
 		Scanner scanner = new Scanner(System.in);
 		String ch = scanner.nextLine();

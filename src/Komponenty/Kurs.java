@@ -63,9 +63,9 @@ public class Kurs {
 	 * 
 	 * @param csv
 	 */
-	public Kurs(String csv) {
-		kodKursu = csv;
-		nazwa = "Matematyka dyskretna";
+	public Kurs(String kodKursu, String nazwa) {
+		this.kodKursu = kodKursu;
+		this.nazwa = nazwa;
 		formy = new HashMap<Forma, Integer>();
 		jezyk = Jezyk.ANG;
 	}

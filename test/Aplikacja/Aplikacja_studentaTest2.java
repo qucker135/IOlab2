@@ -1,3 +1,7 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package Aplikacja;
 
 import Baza.Katalog;
@@ -33,8 +37,7 @@ public class Aplikacja_studentaTest2 {
     @Test
     public void testpobierzChecWypisu() {
         new Expectations() {{
-            String ch = "t";
-            ch.equals("t");
+            
         }};
         
         assertEquals(aplikacja_studenta.pobierzChecWypisu("t"), true);

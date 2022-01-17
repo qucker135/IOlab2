@@ -9,7 +9,7 @@ import Baza.*;
 
 import java.util.List;
 import java.util.ArrayList;
-import java.util.*;
+import java.util.Arrays;
 
 /**
  *
@@ -20,6 +20,8 @@ public class Dane {
     //public static final Grupa[]  GrupatoStringTestGrupy  = {new Grupa("1"), new Grupa("2ab"), new Grupa("xyz")};
     public static final String[][] GrupatoStringDaneTestowe = {{"1", "0", "Kowalski", "[\n\tkodGrupy: 1\n\tkodKursu: 0\n\tForma: Wyklad\n\tNazwisko prowadzacego: Kowalski\n\tTermin: Poniedziałek 9:15\n\tNumer budynku: C4\n\tSala: 205\n\tLiczba zapisanych: 26\n\tMaksymalna liczba zapisanych: 30\n]"}, {"2ab", "8ac", "Nowak", "[\n\tkodGrupy: 2ab\n\tkodKursu: 8ac\n\tForma: Wyklad\n\tNazwisko prowadzacego: Nowak\n\tTermin: Poniedziałek 9:15\n\tNumer budynku: C4\n\tSala: 205\n\tLiczba zapisanych: 26\n\tMaksymalna liczba zapisanych: 30\n]"}, {"9", "3d", "Smith", "[\n\tkodGrupy: 9\n\tkodKursu: 3d\n\tForma: Wyklad\n\tNazwisko prowadzacego: Smith\n\tTermin: Poniedziałek 9:15\n\tNumer budynku: C4\n\tSala: 205\n\tLiczba zapisanych: 26\n\tMaksymalna liczba zapisanych: 30\n]"}};
     //public static final String[] GrupatoStringTestResult = {};
+    
+    public static final String[][] KursToStringDaneTestowe = {{"1", "Matematyka dyskretna", "[\n\tkodKursu: 1\n\tNazwa: Matematyka dyskretna\n\tForma: {}\n\tJezyk: Angielski\n]"}, {"2ab", "Analiza matematyczna", "[\n\tkodKursu: 2ab\n\tNazwa: Analiza matematyczna\n\tForma: {}\n\tJezyk: Angielski\n]"}};
     
     //public static final ArrayList<Grupa>[] KatalogGetListaGrupDaneTestowe = new ArrayList[5];
     

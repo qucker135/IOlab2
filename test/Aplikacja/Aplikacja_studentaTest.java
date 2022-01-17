@@ -51,10 +51,15 @@ public class Aplikacja_studentaTest {
     @Parameterized.Parameter(value = 4)
     public Grupa foundGroup;
     
+    @Parameterized.Parameter(value = 5)
+    public Grupa groupToAdd;
+    
+    @Parameterized.Parameter(value = 6)
+    public ArrayList<Grupa> groupListAfterAdding;
     
     @Parameterized.Parameters
     public static Collection<Object[]> data(){
-        Object[][] data1 = new Object[][]{{Dane.AplikacjaStudentaPobierzChecWypisuData[0], Dane.AplikacjaStudentaExpectedResults[0], Dane.l1, Dane.AplikacjaStudentTestingIndexes[0], Dane.g1}, {Dane.AplikacjaStudentaPobierzChecWypisuData[1], Dane.AplikacjaStudentaExpectedResults[1], Dane.l2, Dane.AplikacjaStudentTestingIndexes[1], Dane.g3}};
+        Object[][] data1 = new Object[][]{{Dane.AplikacjaStudentaPobierzChecWypisuData[0], Dane.AplikacjaStudentaExpectedResults[0], Dane.l1, Dane.AplikacjaStudentTestingIndexes[0], Dane.g1, Dane.g5, Dane.l3}, {Dane.AplikacjaStudentaPobierzChecWypisuData[1], Dane.AplikacjaStudentaExpectedResults[1], Dane.l2, Dane.AplikacjaStudentTestingIndexes[1], Dane.g3, Dane.g6, Dane.l4}};
         return Arrays.asList(data1);
     }
     @Category(SlowTest.class)
@@ -87,6 +92,16 @@ public class Aplikacja_studentaTest {
         assertEquals(as.pobierzGrupe(Dane.l2, "x"), Dane.g4);
         assertEquals(as.pobierzGrupe(Dane.l2, "c"), null);
         */
+    }
+    
+    @Category(SlowTest.class)
+    @Test
+    public void testZapisz() {
+        System.out.println("zapisz");
+        Aplikacja_studenta as = new Aplikacja_studenta();
+        ArrayList<Grupa> groupList = new ArrayList<Grupa>();
+        as.zapisz(groupList, groupToAdd);
+        assertEquals(groupList, groupListAfterAdding);
     }
     
 }

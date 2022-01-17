@@ -47,6 +47,12 @@ public class Dane {
     public static final boolean AplikacjaStudentaExpectedResults[] = {true, false};
     
     public static final String AplikacjaStudentTestingIndexes[] = {"a", "p"};
+    
+    public static final Grupa g5 = new Grupa("ab", "cd", "ef");
+    public static final ArrayList<Grupa> l3 = new ArrayList<Grupa>(Arrays.asList(g5));
+    public static final Grupa g6 = new Grupa("gh", "ij", "kl");
+    public static final ArrayList<Grupa> l4 = new ArrayList<Grupa>(Arrays.asList(g6));
+    
     //public static final Grupa AplikacjaStudentaTestingGroups[] = {g1, g3};
     
     //public List<Grupa> listaGrup1 = new ArrayList<Grupa>();

@@ -7,7 +7,13 @@ import java.util.ArrayList;
 public class KontoStudenta {
 
 	private List<Grupa> listaGrup = new ArrayList<Grupa>();
-
+           
+        public KontoStudenta() {}
+        
+        public KontoStudenta(ArrayList<Grupa> listaGrup){
+            this.listaGrup = listaGrup;
+        }
+        
 	public List<Grupa> getListaGrup() {
 		return this.listaGrup;
 	}

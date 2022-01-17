@@ -9,12 +9,13 @@ package TestSuites;
  * @author Qucker135
  */
 import Komponenty.*;
-import Baza.Katalog;
+import Baza.KatalogTest;
+import Baza.KontoStudentaTest;
 import org.junit.experimental.categories.Categories;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Categories.class)
 @Categories.IncludeCategory(FastTest.class)
-@Suite.SuiteClasses({GrupaTest.class, Katalog.class})
+@Suite.SuiteClasses({GrupaTest.class, KatalogTest.class, KursTest.class, KontoStudentaTest.class})
 public class AllFastTestsSuite {}

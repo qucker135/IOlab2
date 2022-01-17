@@ -10,13 +10,14 @@ package TestSuites;
  */
 import Komponenty.*;
 import Baza.KatalogTest;
+import Baza.KontoStudentaTest;
 import org.junit.experimental.categories.Categories;
 import org.junit.runner.RunWith;
 import org.junit.runners.Suite;
 
 @RunWith(Categories.class)
 @Categories.IncludeCategory(TestGetter.class)
-@Suite.SuiteClasses(KatalogTest.class)
+@Suite.SuiteClasses({KatalogTest.class, KontoStudentaTest.class})
 public class TestGetterSuite {
     
 }
